@@ -84,8 +84,13 @@ tiny(-5);
 
 // 10.
 var getSeconds = function(string){
-	
+	var mins = Number( string.slice(0,2) );
+	var secs = Number( string.slice(3,5) );
+	var total = ( (mins * 60) + secs );
+	console.log(total);	
 }
+getSeconds('01:30');
+getSeconds('10:25');
 
 
 
