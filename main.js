@@ -12,85 +12,85 @@ tripleFive();
 // 2.
 var lastLetter = function(word){
 	var end = word.charAt( (word['length']) - 1);
-	console.log(end);
+	return end;
 }
-lastLetter("train");
+console.log(lastLetter("train"));
 
 // 3.
 var square = function(number){
 	var math = number * number;
-	console.log(math);
+	return math;
 }
-square(5);
+console.log(square(5));
 
 // 4.
 var negate = function(number){
 	var neg = number * -1;
-	console.log(neg);
+	return neg;
 }
-negate(8);
+console.log(negate(8));
 
 // 5.
 var toArray = function(a,b,c){
 	var array = [a, b, c];
-	console.log(array);
+	return array;
 }
-toArray(1,4,5);
+console.log(toArray(1,4,5));
 
 // 6. 
 var startsWithA = function(word){
 	var firstLetter = word.charAt(0);
 	if (firstLetter === 'A') {
-		console.log('True');
+		return 'True';
 	}
 	else {
-		console.log('False');
+		return 'False';
 	}
 }
-startsWithA('Brady');
+console.log(startsWithA('Brady'));
 
 // 7.
 var excite = function(word){
-	console.log(word + "!!!");
+	return (word + "!!!");
 }
-excite('Awesome');
+console.log(excite('Awesome'));
 
 // 8.
 var sun = function(string){
 	var str = string.indexOf('sun');
 	if (str >= 0) {
-		console.log('True')
+		return 'True';
 	}
 	else {
-		console.log('False');
+		return 'False';
 	}
 }
-sun('sundries');
-sun('asunder');
-sun('catapult');
+console.log(sun('sundries'));
+console.log(sun('asunder'));
+console.log(sun('catapult'));
 
 // 9.
 var tiny = function(number){
 	if (number > 0 && number < 1) {
-		console.log('True');
+		return 'True';
 	}
 	else {
-		console.log('False');
+		return 'False';
 	}
 }
-tiny(0.3);
-tiny(14);
-tiny(-5);
+console.log(tiny(0.3));
+console.log(tiny(14));
+console.log(tiny(-5));
 
 // 10.
 var getSeconds = function(string){
 	var mins = Number( string.slice(0,2) );
 	var secs = Number( string.slice(3,5) );
 	var total = ( (mins * 60) + secs );
-	console.log(total);	
+	return total;	
 }
-getSeconds('01:30');
-getSeconds('10:25');
+console.log(getSeconds('01:30'));
+console.log(getSeconds('10:25'));
 
 
 
